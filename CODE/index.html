@@ -1,3 +1,21 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+caution {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+</style>
+
+
 <script type="bteam.utc">
 is.Free="true"
 sourceUTM="ref={x}"
@@ -9,13 +27,47 @@ mobileAllow="1"
 //store the quotations in arrays
 var images = [],
 index = 0;
-images[0] = "<img src='https://blogger.googleusercontent.com/img/a/AVvXsEicWGNmN00XPZkudPazfvzQqa52mE4NFTdMebcVdAdrZDoSrn8vOi2_hi-3KHoUFuoxFdqkSexI94QLuZ0beronS2Q-6fB9IIL0ZLqRJ2G6mv1SkK_LAPf_N1HdUBCO9Xa_NzXBijS9W3x-s8Szbklr5oF8H8SKw1ON1BvXLzQ3920C6bY72ahDRWMdWw=s1999' width=100% alt=''>";
-images[1] = "<img src='https://blogger.googleusercontent.com/img/a/AVvXsEgaSHxkr2rJNPJz1qm_mtXwK24qO2-zQ8vZKkBC_BQo22rrz62JMtJJtqCj3fDcoRkFL7zngFdF8ecCD7zxHF_Ivk60vmnylYFEOereVt4ne1zKU6xuSsE9ExpnzWd3o6tsSu9v8mtTTKrQ0jWTQP8lkU7zdx-nFbj-UWnSwQG-mf7HEg1mwvvY1wbkZw=s2110' alt='' width=100% >";
-images[2] = "<img src='https://blogger.googleusercontent.com/img/a/AVvXsEgFiN473nTR5sR6SZvUmVb_I8znldQOtOKOIk-NENEv9IDqWISQU2_nerTaZbp3CluPfOp9n_AKRNhHkZBWamskpwb0azU95WcOrQQIN0YzsS57E9K2N82zXlrHH1YNqnuMzXIQzgnaGXXBYD8S5d8VAJ_rNVinkPBDk6wFqwsaCPYDYlahIY19XbStgA=s2001' alt='' width=100% >";
-images[3] = "<img src='https://blogger.googleusercontent.com/img/a/AVvXsEi1mvM9Pdm_TR_X5IN-EIr9QcHjSjTTvhkMMtuN8GLQa1gyEBaAbVV78aq-vDR7O8x7TCSLJoVAX5Tifc1pk9tu1UZXDp4dVl6nhcwWy_-dmBJkzVMo2SHYc3cLwHHgAk3tfxKbmBhCdGbtFO4EoU9skJIrYSnsg4ASuKLOxBI3SUVU_Di4wjyB0OLdpw=s2048' alt='' width=100% >";
+images[0] = "<img src='https://blogger.googleusercontent.com/img/a/AVvXsEicWGNmN00XPZkudPazfvzQqa52mE4NFTdMebcVdAdrZDoSrn8vOi2_hi-3KHoUFuoxFdqkSexI94QLuZ0beronS2Q-6fB9IIL0ZLqRJ2G6mv1SkK_LAPf_N1HdUBCO9Xa_NzXBijS9W3x-s8Szbklr5oF8H8SKw1ON1BvXLzQ3920C6bY72ahDRWMdWw=s1999' width=100% alt=''>  <p>Image by 12019 from Pixabay</p>";
+  
+images[1] = "<img src='https://blogger.googleusercontent.com/img/a/AVvXsEgaSHxkr2rJNPJz1qm_mtXwK24qO2-zQ8vZKkBC_BQo22rrz62JMtJJtqCj3fDcoRkFL7zngFdF8ecCD7zxHF_Ivk60vmnylYFEOereVt4ne1zKU6xuSsE9ExpnzWd3o6tsSu9v8mtTTKrQ0jWTQP8lkU7zdx-nFbj-UWnSwQG-mf7HEg1mwvvY1wbkZw=s2110' alt='' width=100% >  <p>Image by Valiphotos from Pixabay</p>";
+  
+images[2] = "<img src='https://blogger.googleusercontent.com/img/a/AVvXsEgFiN473nTR5sR6SZvUmVb_I8znldQOtOKOIk-NENEv9IDqWISQU2_nerTaZbp3CluPfOp9n_AKRNhHkZBWamskpwb0azU95WcOrQQIN0YzsS57E9K2N82zXlrHH1YNqnuMzXIQzgnaGXXBYD8S5d8VAJ_rNVinkPBDk6wFqwsaCPYDYlahIY19XbStgA=s2001' alt='' width=100% > <p>Image by Unknown from Pixabay</p>";
+  
+images[3] = "<img src='https://blogger.googleusercontent.com/img/a/AVvXsEi1mvM9Pdm_TR_X5IN-EIr9QcHjSjTTvhkMMtuN8GLQa1gyEBaAbVV78aq-vDR7O8x7TCSLJoVAX5Tifc1pk9tu1UZXDp4dVl6nhcwWy_-dmBJkzVMo2SHYc3cLwHHgAk3tfxKbmBhCdGbtFO4EoU9skJIrYSnsg4ASuKLOxBI3SUVU_Di4wjyB0OLdpw=s2048' alt='' width=100% >  <p>Image by trilemedia from Pixabay</p>";
+  
+images[4] = "<img src='https://blogger.googleusercontent.com/img/a/AVvXsEhFq8J8cht6M5f646jn5cDfcmnHdaZiBoTXHRjeOC3F3Z5_NDkxBn9AlgB7IwToKqmpDG14cmxA6drVo6R2MHXeq9DVyTJ8JP65YV5ape1m8oi87WobD6gmvSzhfIIXPYWmv81KGEaNwXG5gJTF1umy3FXw9t1KBDbhC75krOCxjg245Bw7zWFYqccZEw=s16000' alt='' width=100% >   <p>Image by Valiphotos from Pixabay</p>";
+  
+images[5] = "<img src='https://blogger.googleusercontent.com/img/a/AVvXsEjrVqJrmW_nSJpHQFtqD1dUdyvShmTWJ2keY50hMwxT6acWtVVS5sb8xOt61dJpbKzp3XdxWPFZnUXHkTnK6iBFCO5w9ote_wBq2VzczePD24BYZH21nhO-Qppdzph038cwyM9PPsDwMCEfEWFrb0fTsYFnMIKpm25GhTQsxLEOKhYywYcNrifAATg4qw=s16000' alt='' width=100% > <p>Image by Unknown from Pixabay</p>";
+  
+images[6] = "<img src='https://blogger.googleusercontent.com/img/a/AVvXsEgxoDipS6SAQWSiS60ob1x9-6cj_5tdpnvBZ73ijJLahwZqktxJrXwApRbYrBag-1TJGRtezQCXCFDL-GKy89fPYMctrxC5upacntNLVgyZ7x3p_txmuhQbsVeNlsrwv3CGK5oRlKWCa8vmPlS4ssmtOn2V4dzzoiYrBT6aNf2_rbJ5Hsc8_DTB8A-Gng=s16000' alt='' width=100% >  <p>Image by chriszwettler from Pixabay</p>";
+  
+images[7] = "<img src='https://blogger.googleusercontent.com/img/a/AVvXsEiImWPl1ns22olgs8gZC-W6WVsgnRRJCqcCdAgbc805L3HEhhLt5T3Cn7MFdbJw_Rh0L4DccfzauElyMEfqmm3igihxj_qA9kiY8vJCumePgdtrqJZU_3a5Py8SQwicUmRpbTOtqZs4vH4Zgk_yfPu9nR2RyAUg30wEoTGEOqgVoKVKyggQu8XhHYi_Kg=s16000' alt='' width=100% >  <p>Image by Unknown from Pixabay</p>";
+
+images[8] = "<img src='https://blogger.googleusercontent.com/img/a/AVvXsEhcZz9pyp9OVvdo9br4OTnsWQVTMug3JMOfyL8jAOCEISzCSO8IoWos4yPlG0GDwuiIL4TmYqgztF11xELikDDffYmWUx4lVAqb_T7oAUgWfxakhUquHSoXrRlOsidj1gapmFJRRqZWwI6O_MFhDMmpH1VN44X2uQHeC_01-GH45QaeFdYdtSMyNs-u3w=s16000' alt='' width=100% >  <p>Image by chriszwettler from Pixabay</p> ";
+
+images[9] = "<img src='https://blogger.googleusercontent.com/img/a/AVvXsEgGYNZiiBArF6DXHIK2-3MSEhUR2mHTq0Hf4tjGuzglIEUPrCylPH5oVKhOFhiWD7Rhjs09zvFfu2uE2juMyElfRhU3sAkt1DcCKrmzdBPEs8NW31e_ZW7eSj2ODoUJ3NY6rYCTv7VzO0-y6gXF5lDMLnp70m6iAUSiaec5da_JclznOQvQbmiAnVb7JQ=s16000' alt='' width=100% >      <p>Image by chriszwettler from Pixabay</p>";
+  
 index = Math.floor(Math.random() * images.length);
 document.write(images[index]);
-//done
+// Done Task
 </script>
 
-<a href="#">Reload</a>
+<center><a href="newimg"><img src="https://cdn.jsdelivr.net/gh/dapps-sc/Image.Random/CODE/assets/img/refresh-button-min.png" alt="Refresh Image" height="80px"/></a><br>
+
+
+
+
+
+<br>
+  
+
+
+
+
+
+  <a target="_blank" ping="http://contentdeliverynetwork.c1.biz/" href="http://contentdeliverynetwork.c1.biz/SERVICEUPLOAD/Image.Random/index.html">Publish your photo </a>
+
+
+
+</center>
+
